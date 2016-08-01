@@ -99,15 +99,6 @@ h3 {
 .icn-container {
   line-height: 25px; }
 
-.html {
-  line-height: 25px; }
-  .html:hover {
-    margin-bottom: 40px; }
-    .html:hover .icn {
-      font-size: 80px; }
-    .html:hover span {
-      font-size: 30px; }
-
 .icn {
   font-size: 40px;
   text-shadow: 0 1px #333; }
