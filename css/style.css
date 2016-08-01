@@ -111,7 +111,8 @@ h3 {
   background-color: #333; }
 
 .progress {
-  background-color: #aaa; }
+  background-color: #aaa;
+  margin-right: 20px; }
 
 .thumbnail {
   padding: 8px; }
