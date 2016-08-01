@@ -11,6 +11,7 @@ body {
 	position: relative;
 	background-color: $bg-clr;
 	background: url('http://i.imgur.com/qFihb1S.png');
+	font-family: $main-font;
 }
 
 .navbar {
@@ -90,7 +91,11 @@ h3 {
 .progress-bar {
 	font-size: 14px;
 	line-height: 40px;
-	background-color: $grey-clr;
+	background-color: $bg-clr;
+}
+
+.progress {
+	background-color: $grey-clr;	
 }
 
 .icn {
@@ -100,6 +105,7 @@ h3 {
 		font-size: 18px;
 	}
 }
+
 .col-xs-3 {
 	line-height: 25px;
 }
@@ -217,7 +223,7 @@ h3 {
 }
 
 .thumbnail {
-	border: 1px solid #333;
+	// border: 1px solid #333;
 	padding: 8px;
 }
 

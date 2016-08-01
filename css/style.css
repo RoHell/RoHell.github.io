@@ -6,7 +6,8 @@
 body {
   position: relative;
   background-color: #333;
-  background: url("http://i.imgur.com/qFihb1S.png"); }
+  background: url("http://i.imgur.com/qFihb1S.png");
+  font-family: "Noto Sans", sans-serif; }
 
 .navbar {
   height: 70px;
@@ -67,6 +68,9 @@ h3 {
 .progress-bar {
   font-size: 14px;
   line-height: 40px;
+  background-color: #333; }
+
+.progress {
   background-color: #aaa; }
 
 .icn {
@@ -169,7 +173,6 @@ h3 {
   padding-right: 10px; }
 
 .thumbnail {
-  border: 1px solid #333;
   padding: 8px; }
 
 @media (max-width: 480px) {
