@@ -1,7 +1,6 @@
 //=== Fonts ===
 $main-font: 'Noto Sans', sans-serif;
 $title-font: 'Bungee', cursive;
-$mono-font: 'PT Mono', monospace;
 
 //===Colors ===
 $main-clr: #E57F17;
@@ -11,52 +10,58 @@ $nav-font-clr: #ddd;
 $bg-clr: #333;
 $grey-clr: #aaa;
 
-//===Other===
-$radius: 4px;
-
-
-
+$html-clr: #e54d26;
+$css-clr: #3d8fc6;
+$js-clr: #f0db4f;
+$jquery-clr: #0769ad;
+$bootstrap-clr: #59407f;
+$sass-color: #ac6499;
+$grunt-clr: #f2aa32;
+$github-clr: #181616;
+$git-clr: #cf4929;
+$ajax-clr: #333;
+$ps-color: #e54d26;
 
 // .html {
-// 	background-color: #e54d26;
+// 	background-color: $html-clr;
 // }
 
 // .css {
-// 	background-color: #3d8fc6;	
+// 	background-color: $css-clr;	
 // }
 
 // .js {
-// 	background-color: #f0db4f;
+// 	background-color: $js-clr;
 // }
 
 // .jquery {
-// 	background-color: #0769ad;	
+// 	background-color: $jquery-clr;	
 // }
 
 // .bootstrap {
-// 	background-color: #59407f;
+// 	background-color: $bootstrap-clr;
 // }
 
 // .sass {
-// 	background-color: #ac6499;	
+// 	background-color: $sass-color;	
 // }
 
 // .grunt {
-// 	background-color: #f2aa32;
+// 	background-color: $grunt-clr;
 // }
 
 // .github {
-// 	background-color: #181616;	
+// 	background-color: $github-clr;	
 // }
 
 // .git {
-// 	background-color: #cf4929;	
+// 	background-color: $git-clr;	
 // }
 
 // .ajax {
-// 	background-color: #333333;
+// 	background-color: $ajax-clr;
 // }
 
 // .photoshop {
-// 	background-color: #e54d26;	
+// 	background-color: $ps-color;	
 // }

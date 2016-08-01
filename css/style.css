@@ -167,6 +167,9 @@ h3 {
   line-height: 70px; }
 
 @media (max-width: 480px) {
+  h1 {
+    margin-top: 30vh;
+    font-size: 25px; }
   .title-description {
     padding: 20px; }
   .btn-default {
@@ -187,17 +190,18 @@ h3 {
     height: 50px;
     border-radius: 50%;
     left: calc(50vw - 25px); }
-  .glyphicon-menu-down {
-    margin-left: 0; }
+    .cta .glyphicon-menu-down {
+      margin-left: 0; }
   .contact {
     height: 1000px;
-    padding: 30px; } }
-
-.fa-github, .fa-codepen {
-  font-size: 24px;
-  padding-right: 8px; }
+    padding: 30px; }
+  .fa-github, .fa-codepen {
+    font-size: 24px;
+    padding-right: 8px; } }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  h1 {
+    margin-top: 20vh; }
   .cta {
     bottom: 25px;
     font-size: 62px;
@@ -205,8 +209,8 @@ h3 {
     height: 70px;
     border-radius: 50%;
     left: calc(50vw - 35px); }
-  .glyphicon-menu-down {
-    margin-left: 1px; }
+    .cta .glyphicon-menu-down {
+      margin-left: 1px; }
   .contact {
     height: 1100px; } }
 
