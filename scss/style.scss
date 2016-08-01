@@ -14,11 +14,29 @@ body {
 	font-family: $main-font;
 }
 
+h1 {
+	margin-top: 40vh;
+	text-align: center;
+	font-family: $title-font;
+}
+
+h2 {
+	text-align: center;
+	font-family: $title-font;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-family: $main-font;
+	font-size: 30px;
+}
+
+// === Navbar ===
 .navbar {
 	height: 70px;
 	background-color: #333;
 	font-size: 25px;
-	font-family: $main-font;
+	font-family: $title-font;
 	margin-bottom: 0;
 	img {
 		padding: 10px 20px;
@@ -29,16 +47,28 @@ body {
     border: none;
 }
 
+.me {
+  float: left;
+	width: 70px;
+	height: 70px;
+	background: url('http://i.imgur.com/guRT5Db.png?1') center no-repeat;
+    transition: .3s;
+	&:hover {
+		background: url('http://i.imgur.com/c3oJmBh.png?1') center no-repeat;
+	}
+}
+
 .navbar-inverse {
   .navbar-nav > li {
   	background-color: #333;
   	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
   	margin-top: -8px;
   	> a {
-  		line-height: 57px;
-  		height: 78px;
-      color: #ddd;
-      border-bottom: 1px solid #000;
+		line-height: 57px;
+		height: 78px;
+		color: #ddd;
+		border-bottom: 1px solid #000;
+    	transition: .3s;
   		&:hover {
   			color: $main-clr;
   		}
@@ -61,27 +91,49 @@ body {
   }
 }
 
+// === Jumbotron ===
 .jumbotron {
 	position: relative;
 	background: url('http://i.imgur.com/fWX72pj.jpg?1') 0/cover no-repeat;
 	height: 100vh;
 }
 
-h1 {
-	margin-top: 40vh;
-	text-align: center;
-	font-family: $title-font;
+.cta {
+	position: absolute;
+	bottom: 40px;
+	font-size: 90px;
+	left: calc(50vw - 50px);
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 4px solid $main-clr;
+	color: $black-clr;
+	transition: .3s;
+	&:hover {
+		color: $main-clr;		
+		border-color: $black-clr;
+	}
+	.glyphicon-menu-down {
+		margin-left: 2px;
+	}
 }
 
-h2 {
-	text-align: center;
-	font-family: $title-font;
-	margin-bottom: 20px;
+// === Knowledge Section ===
+#whatIKnow, #whatIDid, #contact {
+	padding-top: 100px;
 }
 
-h3 {
-	font-family: $main-font;
-	font-size: 30px;
+.icn-container {
+	line-height: 25px;
+}
+
+.icn {
+	font-size: 40px;
+	text-shadow: 0 1px #333;
+	span {
+		font-size: 18px;
+	}
 }
 
 .progress, .progress-bar {
@@ -98,97 +150,9 @@ h3 {
 	background-color: $grey-clr;	
 }
 
-.icn {
-	font-size: 40px;
-	text-shadow: 0 1px #333;
-	span {
-		font-size: 18px;
-	}
-}
-
-.col-xs-3 {
-	line-height: 25px;
-}
-
-#whatIKnow, #whatIDid, #contact {
-	padding-top: 100px;
-}
-
-.me {
-  float: left;
-	width: 70px;
-	height: 70px;
-	background: url('http://i.imgur.com/guRT5Db.png?1') center no-repeat;
-	&:hover {
-		background: url('http://i.imgur.com/c3oJmBh.png?1') center no-repeat;
-	}
-}
-
-.cta {
-	position: absolute;
-	bottom: 40px;
-	font-size: 90px;
-	left: calc(50vw - 50px);
-	cursor: pointer;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	border: 4px solid $main-clr;
-	color: $black-clr;
-	&:hover {
-		color: $main-clr;		
-		border-color: $black-clr;
-	}
-}
-
-.cta-wrapper {
-	margin: 0 auto;
-	font-size: 90px;
-	cursor: pointer;
-	width: 100px;
-	height: 100px;
-	.cta-title {
-		// border-radius: 50%;
-		// border: 4px solid $main-clr;
-		color: $black-clr;
-		&:hover {
-			color: $main-clr;		
-			// border-color: $black-clr;
-		}
-	}
-}
-
-.glyphicon-menu-down {
-	margin-left: 2px;
-}
-
-.contact {
-	margin: 0 auto;
-	height: 480px;
-	background-color: #333;
-	color: $white-clr;
-	padding: 100px;
-	text-align: center;
-	h3 {
-		font-size: 26px;
-	}
-}
-
-.name, .mobile, .mail {
-	padding-bottom: 50px;
-}
-
-.fa-mobile, .fa-envelope {
-	font-size: 200px;
-	color: $main-clr;
-}
-
-.copyright {
-	background-color: #333;
-	color: $grey-clr;
-	text-align: center;
-	height: 70px;
-	line-height: 70px;
+// === Projects Section ===
+.thumbnail {
+	padding: 8px;
 }
 
 .title-description {
@@ -222,9 +186,34 @@ h3 {
 	padding-right: 10px;
 }
 
-.thumbnail {
-	// border: 1px solid #333;
-	padding: 8px;
+// === Contact Section ===
+.contact {
+	margin: 0 auto;
+	height: 480px;
+	background-color: #333;
+	color: $white-clr;
+	padding: 100px;
+	text-align: center;
+	h3 {
+		font-size: 26px;
+	}
+}
+
+.name, .mobile, .mail {
+	padding-bottom: 50px;
+}
+
+.fa-mobile, .fa-envelope {
+	font-size: 200px;
+	color: $main-clr;
+}
+
+.copyright {
+	background-color: #333;
+	color: $grey-clr;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
 }
 
 @media (max-width: 480px) {
@@ -297,9 +286,9 @@ h3 {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+// @media (min-width: 992px) and (max-width: 1200px) {
 
-}
+// }
 
 @media (min-width: 1201px) {
 	.contact {

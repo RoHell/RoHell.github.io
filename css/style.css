@@ -9,17 +9,40 @@ body {
   background: url("http://i.imgur.com/qFihb1S.png");
   font-family: "Noto Sans", sans-serif; }
 
+h1 {
+  margin-top: 40vh;
+  text-align: center;
+  font-family: "Bungee", cursive; }
+
+h2 {
+  text-align: center;
+  font-family: "Bungee", cursive;
+  margin-bottom: 20px; }
+
+h3 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 30px; }
+
 .navbar {
   height: 70px;
   background-color: #333;
   font-size: 25px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Bungee", cursive;
   margin-bottom: 0; }
   .navbar img {
     padding: 10px 20px; }
 
 .navbar-collapse {
   border: none; }
+
+.me {
+  float: left;
+  width: 70px;
+  height: 70px;
+  background: url("http://i.imgur.com/guRT5Db.png?1") center no-repeat;
+  transition: .3s; }
+  .me:hover {
+    background: url("http://i.imgur.com/c3oJmBh.png?1") center no-repeat; }
 
 .navbar-inverse .navbar-nav > li {
   background-color: #333;
@@ -29,7 +52,8 @@ body {
     line-height: 57px;
     height: 78px;
     color: #ddd;
-    border-bottom: 1px solid #000; }
+    border-bottom: 1px solid #000;
+    transition: .3s; }
     .navbar-inverse .navbar-nav > li > a:hover {
       color: #E57F17; }
 
@@ -48,19 +72,35 @@ body {
   background: url("http://i.imgur.com/fWX72pj.jpg?1") 0/cover no-repeat;
   height: 100vh; }
 
-h1 {
-  margin-top: 40vh;
-  text-align: center;
-  font-family: "Bungee", cursive; }
+.cta {
+  position: absolute;
+  bottom: 40px;
+  font-size: 90px;
+  left: calc(50vw - 50px);
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #E57F17;
+  color: #000;
+  transition: .3s; }
+  .cta:hover {
+    color: #E57F17;
+    border-color: #000; }
+  .cta .glyphicon-menu-down {
+    margin-left: 2px; }
 
-h2 {
-  text-align: center;
-  font-family: "Bungee", cursive;
-  margin-bottom: 20px; }
+#whatIKnow, #whatIDid, #contact {
+  padding-top: 100px; }
 
-h3 {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 30px; }
+.icn-container {
+  line-height: 25px; }
+
+.icn {
+  font-size: 40px;
+  text-shadow: 0 1px #333; }
+  .icn span {
+    font-size: 18px; }
 
 .progress, .progress-bar {
   height: 40px; }
@@ -73,78 +113,8 @@ h3 {
 .progress {
   background-color: #aaa; }
 
-.icn {
-  font-size: 40px;
-  text-shadow: 0 1px #333; }
-  .icn span {
-    font-size: 18px; }
-
-.col-xs-3 {
-  line-height: 25px; }
-
-#whatIKnow, #whatIDid, #contact {
-  padding-top: 100px; }
-
-.me {
-  float: left;
-  width: 70px;
-  height: 70px;
-  background: url("http://i.imgur.com/guRT5Db.png?1") center no-repeat; }
-  .me:hover {
-    background: url("http://i.imgur.com/c3oJmBh.png?1") center no-repeat; }
-
-.cta {
-  position: absolute;
-  bottom: 40px;
-  font-size: 90px;
-  left: calc(50vw - 50px);
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 4px solid #E57F17;
-  color: #000; }
-  .cta:hover {
-    color: #E57F17;
-    border-color: #000; }
-
-.cta-wrapper {
-  margin: 0 auto;
-  font-size: 90px;
-  cursor: pointer;
-  width: 100px;
-  height: 100px; }
-  .cta-wrapper .cta-title {
-    color: #000; }
-    .cta-wrapper .cta-title:hover {
-      color: #E57F17; }
-
-.glyphicon-menu-down {
-  margin-left: 2px; }
-
-.contact {
-  margin: 0 auto;
-  height: 480px;
-  background-color: #333;
-  color: #fff;
-  padding: 100px;
-  text-align: center; }
-  .contact h3 {
-    font-size: 26px; }
-
-.name, .mobile, .mail {
-  padding-bottom: 50px; }
-
-.fa-mobile, .fa-envelope {
-  font-size: 200px;
-  color: #E57F17; }
-
-.copyright {
-  background-color: #333;
-  color: #aaa;
-  text-align: center;
-  height: 70px;
-  line-height: 70px; }
+.thumbnail {
+  padding: 8px; }
 
 .title-description {
   border-top: 1px solid #E57F17;
@@ -172,8 +142,29 @@ h3 {
   float: left;
   padding-right: 10px; }
 
-.thumbnail {
-  padding: 8px; }
+.contact {
+  margin: 0 auto;
+  height: 480px;
+  background-color: #333;
+  color: #fff;
+  padding: 100px;
+  text-align: center; }
+  .contact h3 {
+    font-size: 26px; }
+
+.name, .mobile, .mail {
+  padding-bottom: 50px; }
+
+.fa-mobile, .fa-envelope {
+  font-size: 200px;
+  color: #E57F17; }
+
+.copyright {
+  background-color: #333;
+  color: #aaa;
+  text-align: center;
+  height: 70px;
+  line-height: 70px; }
 
 @media (max-width: 480px) {
   .title-description {
