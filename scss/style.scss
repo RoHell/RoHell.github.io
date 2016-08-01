@@ -49,12 +49,15 @@ h3 {
 
 .me {
   float: left;
-	width: 70px;
-	height: 70px;
-	background: url('http://i.imgur.com/guRT5Db.png?1') center no-repeat;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	background: url('http://i.imgur.com/Snd5yBh.png') center no-repeat;
+	background-size: cover;
     transition: .3s;
 	&:hover {
-		background: url('http://i.imgur.com/c3oJmBh.png?1') center no-repeat;
+		background: url('http://i.imgur.com/VG0xxnD.png?1') center no-repeat;
+	background-size: cover;
 	}
 }
 
@@ -74,21 +77,18 @@ h3 {
   		}
   	}	
   }
-}
-
-.navbar-toggle {
-  transform: scale(2);
-  margin-top: 18px;
-    margin-right: 21px;
-}
-
-.navbar-inverse {
   .navbar-nav>.active>a {
     color: $main-clr;
     &:hover {
       color: $main-clr;
     }
   }
+}
+
+.navbar-toggle {
+  transform: scale(2);
+  margin-top: 18px;
+    margin-right: 21px;
 }
 
 // === Jumbotron ===
@@ -123,9 +123,21 @@ h3 {
 #whatIKnow, #whatIDid, #contact {
 	padding-top: 100px;
 }
-
 .icn-container {
 	line-height: 25px;
+}
+
+.html {
+	line-height: 25px;
+	&:hover {
+		margin-bottom: 40px;
+		.icn {
+			font-size: 80px;			
+		}
+		span {
+			font-size: 30px;
+		}
+	}
 }
 
 .icn {

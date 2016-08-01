@@ -37,12 +37,15 @@ h3 {
 
 .me {
   float: left;
-  width: 70px;
-  height: 70px;
-  background: url("http://i.imgur.com/guRT5Db.png?1") center no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  background: url("http://i.imgur.com/Snd5yBh.png") center no-repeat;
+  background-size: cover;
   transition: .3s; }
   .me:hover {
-    background: url("http://i.imgur.com/c3oJmBh.png?1") center no-repeat; }
+    background: url("http://i.imgur.com/VG0xxnD.png?1") center no-repeat;
+    background-size: cover; }
 
 .navbar-inverse .navbar-nav > li {
   background-color: #333;
@@ -57,15 +60,15 @@ h3 {
     .navbar-inverse .navbar-nav > li > a:hover {
       color: #E57F17; }
 
-.navbar-toggle {
-  transform: scale(2);
-  margin-top: 18px;
-  margin-right: 21px; }
-
 .navbar-inverse .navbar-nav > .active > a {
   color: #E57F17; }
   .navbar-inverse .navbar-nav > .active > a:hover {
     color: #E57F17; }
+
+.navbar-toggle {
+  transform: scale(2);
+  margin-top: 18px;
+  margin-right: 21px; }
 
 .jumbotron {
   position: relative;
@@ -95,6 +98,15 @@ h3 {
 
 .icn-container {
   line-height: 25px; }
+
+.html {
+  line-height: 25px; }
+  .html:hover {
+    margin-bottom: 40px; }
+    .html:hover .icn {
+      font-size: 80px; }
+    .html:hover span {
+      font-size: 30px; }
 
 .icn {
   font-size: 40px;
