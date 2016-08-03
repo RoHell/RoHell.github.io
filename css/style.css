@@ -40,12 +40,11 @@ h3 {
   width: 50px;
   height: 50px;
   margin-top: 10px;
-  background: url("http://i.imgur.com/Snd5yBh.png") center no-repeat;
-  background-size: cover;
+  margin-left: 20px;
+  background: url("http://i.imgur.com/Snd5yBh.png") 0/cover no-repeat;
   transition: .3s; }
   .me:hover {
-    background: url("http://i.imgur.com/VG0xxnD.png?1") center no-repeat;
-    background-size: cover; }
+    background: url("http://i.imgur.com/VG0xxnD.png?1") 0/cover no-repeat; }
 
 .navbar-inverse .navbar-nav > li {
   background-color: #333;
@@ -96,26 +95,31 @@ h3 {
 #whatIKnow, #whatIDid, #contact {
   padding-top: 100px; }
 
-.icn-container {
-  line-height: 25px; }
-
-.icn {
-  font-size: 40px;
-  text-shadow: 0 1px #333; }
-  .icn span {
-    font-size: 18px; }
-
-.progress, .progress-bar {
-  height: 40px; }
-
-.progress-bar {
-  font-size: 14px;
-  line-height: 40px;
-  background-color: #333; }
-
-.progress {
-  background-color: #aaa;
-  margin-right: 20px; }
+.slider-1 {
+  cursor: pointer;
+  transition: .3s; }
+  .slider-1 .icn-container {
+    line-height: 25px; }
+    .slider-1 .icn-container .icn {
+      font-size: 40px;
+      text-shadow: 0 1px #333;
+      transition: .3s; }
+      .slider-1 .icn-container .icn span {
+        font-size: 18px;
+        transition: .3s; }
+  .slider-1 .progress {
+    background-color: #aaa;
+    margin-right: 20px;
+    transition: .3s;
+    height: 30px; }
+  .slider-1 .progress-bar {
+    transition: .3s;
+    line-height: 30px;
+    background-color: #333;
+    height: 30px;
+    font-size: 14px; }
+  .slider-1 .tech {
+    transition: .3s; }
 
 .thumbnail {
   padding: 8px; }
@@ -132,7 +136,7 @@ h3 {
 .btn-default {
   background-color: #333;
   color: #fff;
-  min-width: 122px;
+  min-width: 120px;
   line-height: 25px; }
   .btn-default:hover, .btn-default:active, .btn-default:focus {
     background-color: #000;
@@ -179,10 +183,6 @@ h3 {
   .btn-default {
     min-width: 100px;
     line-height: 25px; }
-  .progress, .progress-bar {
-    height: 30px; }
-  .progress-bar {
-    line-height: 30px; }
   .icn {
     font-size: 30px; }
     .icn span {
@@ -199,9 +199,14 @@ h3 {
   .contact {
     height: 1000px;
     padding: 30px; }
+  .btn-default {
+    min-width: 100px;
+    line-height: 24px; }
   .fa-github, .fa-codepen {
     font-size: 24px;
-    padding-right: 8px; } }
+    color: #fff;
+    float: left;
+    padding-right: 6px; } }
 
 @media (min-width: 480px) and (max-width: 767px) {
   h1 {
@@ -226,6 +231,14 @@ h3 {
 
 @media (min-width: 1201px) {
   .contact {
-    padding: 100px 180px; } }
+    padding: 100px 180px; }
+  .btn-default {
+    min-width: 100px;
+    line-height: 24px; }
+  .fa-github, .fa-codepen {
+    font-size: 24px;
+    color: #fff;
+    float: left;
+    padding-right: 6px; } }
 
 /*# sourceMappingURL=style.css.map */

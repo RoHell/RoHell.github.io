@@ -15,7 +15,7 @@ $(function(){
 
 	// === Animate on Scroll ===
 	var $animation_elements = $('.slider-1');
-	var slideInLeft = 'slideInLeft animated';
+	var animation = 'slideInLeft animated';
 	var $window = $(window);
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
@@ -31,14 +31,26 @@ $(function(){
 			var element_top_position = $element.offset().top;
 			var element_bottom_position = (element_top_position + element_height);
 
-			//check to see if this current container is within viewport
 			if ((element_bottom_position >= window_top_position) &&
 				(element_top_position <= window_bottom_position)) {
-				$element.addClass(slideInLeft);
+				$element.addClass(animation);
 			} 
 			// else {
-			// 	$element.removeClass(slideInLeft);
+			// 	$element.removeClass(animation);
 			// }
 		});
 	}
+
+	// === fixed large screen thumbnail ===
+	$(window).resize(function() {
+		var $winWidth = $(window).width();
+		if ($winWidth >= 1200) {
+			$('.lg').addClass('row');
+			$('.md').removeClass();
+		} else {
+			$('.md').addClass('row');
+			$('.lg').removeClass();
+		}
+	})
+	
 });
