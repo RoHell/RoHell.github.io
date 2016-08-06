@@ -66,8 +66,7 @@ h3 {
 
 .navbar-toggle {
   transform: scale(2);
-  margin-top: 18px;
-  margin-right: 21px; }
+  margin: 18px 21px; }
 
 .jumbotron {
   position: relative;
