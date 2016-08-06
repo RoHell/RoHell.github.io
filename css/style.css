@@ -95,30 +95,29 @@ h3 {
 #whatIKnow, #whatIDid, #contact {
   padding-top: 100px; }
 
-.slider-1 {
-  cursor: pointer;
-  transition: .3s; }
-  .slider-1 .icn-container {
+.progress-bar-container {
+  cursor: pointer; }
+  .progress-bar-container .icn-container {
     line-height: 25px; }
-    .slider-1 .icn-container .icn {
+    .progress-bar-container .icn-container .icn {
       font-size: 40px;
       text-shadow: 0 1px #333;
       transition: .3s; }
-      .slider-1 .icn-container .icn span {
+      .progress-bar-container .icn-container .icn span {
         font-size: 18px;
         transition: .3s; }
-  .slider-1 .progress {
+  .progress-bar-container .progress {
     background-color: #aaa;
     margin-right: 20px;
     transition: .3s;
     height: 30px; }
-  .slider-1 .progress-bar {
+  .progress-bar-container .progress-bar {
     transition: .3s;
     line-height: 30px;
     background-color: #333;
     height: 30px;
     font-size: 14px; }
-  .slider-1 .tech {
+  .progress-bar-container .tech {
     transition: .3s; }
 
 .thumbnail {

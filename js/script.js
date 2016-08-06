@@ -14,8 +14,10 @@ $(function(){
 	});
 
 	// === Animate on Scroll ===
-	var $animation_elements = $('.slider-1');
-	var animation = 'slideInLeft animated';
+	var $animated_bar = $('.progress-bar-container');
+	var $animated_thumbnail = $('.thumbnail')
+	var animation_bar = 'slideInLeft animated';
+	var animation_thumbnail = 'fadeInUp animated';
 	var $window = $(window);
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
@@ -25,7 +27,7 @@ $(function(){
 		var window_top_position = $window.scrollTop();
 		var window_bottom_position = (window_top_position + window_height);
 
-		$.each($animation_elements, function() {
+		$.each($animated_bar, function() {
 			var $element = $(this);
 			var element_height = $element.outerHeight();
 			var element_top_position = $element.offset().top;
@@ -33,10 +35,25 @@ $(function(){
 
 			if ((element_bottom_position >= window_top_position) &&
 				(element_top_position <= window_bottom_position)) {
-				$element.addClass(animation);
+				$element.addClass(animation_bar);
 			} 
 			// else {
 			// 	$element.removeClass(animation);
+			// }
+		});
+
+		$.each($animated_thumbnail, function() {
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			if ((element_bottom_position >= window_top_position) &&
+				(element_top_position <= window_bottom_position)) {
+				$element.addClass(animation_thumbnail);
+			} 
+			// else {
+			// 	$element.removeClass(animation_thumbnail);
 			// }
 		});
 	}
@@ -52,5 +69,4 @@ $(function(){
 			$('.lg').removeClass();
 		}
 	})
-	
 });
