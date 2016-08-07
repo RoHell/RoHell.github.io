@@ -44,52 +44,49 @@ h3 {
 }
 
 .navbar-collapse {
-    border: none;
+	border: none;
 }
 
 .me {
-  	float: left;
+		float: left;
 	width: 50px;
 	height: 50px;
 	margin-top: 10px;
 	margin-left: 20px;
 	background: url('http://i.imgur.com/Snd5yBh.png') 0/cover no-repeat;
-    transition: .3s;
+	transition: .3s;
 	&:hover {
 		background: url('http://i.imgur.com/VG0xxnD.png?1') 0/cover no-repeat;
 	}
 }
 
-.navbar-inverse {
-  .navbar-nav > li {
-  	background-color: #333;
-  	box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-  	margin-top: -8px;
-  	> a {
+	.navbar-inverse {
+	.navbar-nav > li {
+		background-color: #333;
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+		margin-top: -8px;
+		> a {
 		line-height: 57px;
 		height: 78px;
 		color: #ddd;
 		border-bottom: 1px solid #000;
-    	transition: .3s;
-  		&:hover {
-  			color: $main-clr;
-  		}
-  	}	
-  }
-  .navbar-nav>.active>a {
-    color: $main-clr;
-    &:hover {
-      color: $main-clr;
-    }
-  }
+		transition: .3s;
+			&:hover {
+				color: $main-clr;
+			}
+		}	
+	}
+	.navbar-nav>.active>a {
+	color: $main-clr;
+		&:hover {
+			color: $main-clr;
+		}
+	}
 }
 
 .navbar-toggle {
 	transform: scale(2);
 	margin: 18px 21px;
-	// margin-top: 18px;
-	// margin-right: 21px;
-	// margin-bottom: 18px;
 }
 
 // === Jumbotron ===
@@ -124,13 +121,6 @@ h3 {
 #whatIKnow, #whatIDid, #contact {
 	padding-top: 100px;
 }
-
-// .html {
-// 	background-color: $html-clr;
-// 	transition: 1s;
-// }
-
-
 
 .progress-bar-container {
 	cursor: pointer;

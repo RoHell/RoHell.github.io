@@ -1,51 +1,41 @@
 module.exports = function(grunt) {
-	grunt.initConfig({
-		sass: {
 
-  			options: {
-    			sourceMap: true
-  			},
-	  		dist: {
-	    		files: {
-	          'css/style.css': 'scss/style.scss'
-	    		}
-	  		}
-    	},
-
-    	watch: {
-
-	  		scripts: {
-	    		files: ['**/*.scss'],
-	    		tasks: ['sass'],
-	    		options: {
-	        		spawn: false,
-	    		}
-	  		}
+	grunt.initConfig({    
+		watch: {
+			files: 'scss/*.scss',
+			tasks: ['sass'],
+			options: {
+				livereload: true
+			}
 		},
-
+		sass: {
+			dist: {
+				files: {
+					'css/*.css': 'scss/*.scss'
+				}
+			}
+		},
 		browserSync: {
-	      	server: {
-	        	bsFiles: {
-	          		src : [
-	            		'css/*.css',
-	            		'*.html',
-	            		'js/*.js',
-	            		'scss/*.scss'
-	          		]
-	        	},
-	        	options: {
-	          		watchTask: true,
-	          		server: {
-	          			baseDir: './'
-	          		}
-	        	}
-	      	}
-	    }
+			bsFiles: {
+				src : [
+					'css/*.css',
+					'*.html',
+					'js/*.js'
+				]
+			},
+			options: {
+				server: {
+					baseDir: "./"
+				}
+				
+			}
+		}
 	});
 
-	grunt.loadNpmTasks('grunt-sass');	
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-browser-sync');
 
-	grunt.registerTask('default', ['browserSync', 'sass', 'watch']);
+	grunt.registerTask('default', ['browserSync', 'watch', 'sass']);
+
 };

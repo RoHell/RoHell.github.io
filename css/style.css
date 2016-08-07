@@ -58,7 +58,6 @@ h3 {
     transition: .3s; }
     .navbar-inverse .navbar-nav > li > a:hover {
       color: #E57F17; }
-
 .navbar-inverse .navbar-nav > .active > a {
   color: #E57F17; }
   .navbar-inverse .navbar-nav > .active > a:hover {
@@ -176,15 +175,19 @@ h3 {
   h1 {
     margin-top: 30vh;
     font-size: 25px; }
+
   .title-description {
     padding: 20px; }
+
   .btn-default {
     min-width: 100px;
     line-height: 25px; }
+
   .icn {
     font-size: 30px; }
     .icn span {
       font-size: 12px; }
+
   .cta {
     bottom: 25px;
     font-size: 42px;
@@ -194,21 +197,24 @@ h3 {
     left: calc(50vw - 25px); }
     .cta .glyphicon-menu-down {
       margin-left: 0; }
+
   .contact {
     height: 1000px;
     padding: 30px; }
+
   .btn-default {
     min-width: 100px;
     line-height: 24px; }
+
   .fa-github, .fa-codepen {
     font-size: 24px;
     color: #fff;
     float: left;
     padding-right: 6px; } }
-
 @media (min-width: 480px) and (max-width: 767px) {
   h1 {
     margin-top: 20vh; }
+
   .cta {
     bottom: 25px;
     font-size: 62px;
@@ -218,21 +224,23 @@ h3 {
     left: calc(50vw - 35px); }
     .cta .glyphicon-menu-down {
       margin-left: 1px; }
+
   .contact {
     height: 1100px; } }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .contact h3 {
     font-size: 19px; }
+
   h1 {
     margin-top: 20vh; } }
-
 @media (min-width: 1201px) {
   .contact {
     padding: 100px 180px; }
+
   .btn-default {
     min-width: 100px;
     line-height: 24px; }
+
   .fa-github, .fa-codepen {
     font-size: 24px;
     color: #fff;
