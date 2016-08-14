@@ -123,41 +123,36 @@ h3 {
 }
 
 .progress-bar-container {
-	cursor: pointer;
-	// 
 	.icn-container {
 		line-height: 25px;
 		.icn {
 			font-size: 40px;
 			text-shadow: 0 1px #333;
-			transition: .3s;
 			span {
 				font-size: 18px;
-				transition: .3s;
 			}
 		}
 	}
 	.progress {
 		background-color: $grey-clr;
 		margin-right: 20px;
-		transition: .3s;
 		height: 30px;
 	}
 	.progress-bar {
-		transition: .3s;
 		line-height: 30px;
 		background-color: $bg-clr;
 		height: 30px;
 		font-size: 14px;
-	}
-	.tech {
-		transition: .3s;
 	}
 }
 
 // === Projects Section ===
 .thumbnail {
 	padding: 8px;
+}
+
+.caption h3 {
+	font-size: 23px;
 }
 
 .title-description {
@@ -171,7 +166,7 @@ h3 {
 }
 
 .btn-default {
-	background-color: #333;
+	background-color: $bg-clr;
 	color: $white-clr;
 	min-width: 120px;
 	line-height: 25px;
@@ -194,13 +189,45 @@ h3 {
 // === Contact Section ===
 .contact {
 	margin: 0 auto;
-	height: 480px;
-	background-color: #333;
+	height: 435px;
+	background-color: $bg-clr;
 	color: $white-clr;
 	padding: 100px;
 	text-align: center;
 	h3 {
 		font-size: 26px;
+	}
+}
+
+.links {
+	position: relative;
+	// margin-top: -30px;
+	text-align: center;
+	background-color: $bg-clr;	
+	.fa {
+		font-size: 60px;
+		padding: 20px;
+		padding-bottom: 0;
+		float: none;
+		cursor: pointer;
+		transition: .3s;
+		&:hover {
+			color: $main-clr;
+			span {
+				transform: scaleY(1);
+				color: $white-clr;
+			}
+		}
+		span {
+			position: relative;
+			font-family: $main-font;
+			display: inline-block;
+			top: -25px;
+			font-size: 16px;
+			transform: scaleY(0);
+			transform-origin: 0;
+			transition: .3s;
+		}
 	}
 }
 
@@ -214,7 +241,7 @@ h3 {
 }
 
 .copyright {
-	background-color: #333;
+	background-color: $bg-clr;
 	color: $grey-clr;
 	text-align: center;
 	height: 70px;
@@ -298,14 +325,19 @@ h3 {
 	}
 }
 
-// @media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+	.contact {
+		h3 {
+			font-size: 22px;
+		}
+	}
+}
 
-// }
-
-@media (min-width: 1201px) {
+@media (min-width: 992px) {
 	.contact {
 		padding: 100px 180px;
 	}
+
 	.btn-default {
 		min-width: 100px;
 		line-height: 24px;
