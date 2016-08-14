@@ -168,7 +168,7 @@ h3 {
 .btn-default {
 	background-color: $bg-clr;
 	color: $white-clr;
-	min-width: 120px;
+	min-width: 102px;
 	line-height: 25px;
 	&:hover, &:active, &:focus {
 		background-color: $black-clr;
@@ -201,33 +201,32 @@ h3 {
 
 .links {
 	position: relative;
-	// margin-top: -30px;
 	text-align: center;
-	background-color: $bg-clr;	
-	.fa {
-		font-size: 60px;
-		padding: 20px;
-		padding-bottom: 0;
-		float: none;
-		cursor: pointer;
-		transition: .3s;
+	background-color: $bg-clr;
+	.github, .codepen {
+		display: inline-block;
+		margin: 0 20px 70px;
 		&:hover {
-			color: $main-clr;
-			span {
-				transform: scaleY(1);
-				color: $white-clr;
+			.fa {
+				text-shadow: 2px 2px 2px #000;
 			}
 		}
 		span {
-			position: relative;
+			color: $white-clr;
 			font-family: $main-font;
 			display: inline-block;
-			top: -25px;
-			font-size: 16px;
-			transform: scaleY(0);
-			transform-origin: 0;
+			font-size: 14px;
 			transition: .3s;
 		}
+	}
+	.fa {
+		width: 80px;
+		color: $main-clr;
+		font-size: 60px;
+		padding: 10px;
+		float: none;
+		cursor: pointer;
+		transition: .3s;
 	}
 }
 

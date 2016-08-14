@@ -128,7 +128,7 @@ h3 {
 .btn-default {
   background-color: #333;
   color: #fff;
-  min-width: 120px;
+  min-width: 102px;
   line-height: 25px; }
   .btn-default:hover, .btn-default:active, .btn-default:focus {
     background-color: #000;
@@ -156,27 +156,25 @@ h3 {
   position: relative;
   text-align: center;
   background-color: #333; }
+  .links .github, .links .codepen {
+    display: inline-block;
+    margin: 0 20px 70px; }
+    .links .github:hover .fa, .links .codepen:hover .fa {
+      text-shadow: 2px 2px 2px #000; }
+    .links .github span, .links .codepen span {
+      color: #fff;
+      font-family: "Noto Sans", sans-serif;
+      display: inline-block;
+      font-size: 14px;
+      transition: .3s; }
   .links .fa {
+    width: 80px;
+    color: #E57F17;
     font-size: 60px;
-    padding: 20px;
-    padding-bottom: 0;
+    padding: 10px;
     float: none;
     cursor: pointer;
     transition: .3s; }
-    .links .fa:hover {
-      color: #E57F17; }
-      .links .fa:hover span {
-        transform: scaleY(1);
-        color: #fff; }
-    .links .fa span {
-      position: relative;
-      font-family: "Noto Sans", sans-serif;
-      display: inline-block;
-      top: -25px;
-      font-size: 16px;
-      transform: scaleY(0);
-      transform-origin: 0;
-      transition: .3s; }
 
 .name, .mobile, .mail {
   padding-bottom: 50px; }
