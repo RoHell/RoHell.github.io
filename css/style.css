@@ -92,10 +92,7 @@ h3 {
     opacity: .1; }
 
 .cta {
-  position: absolute;
-  top: 80vh;
   font-size: 90px;
-  left: calc(50vw - 50px);
   cursor: pointer;
   width: 100px;
   height: 100px;
@@ -103,6 +100,20 @@ h3 {
   transition: .3s; }
   .cta:hover {
     color: #E57F17; }
+
+#cta-down {
+  position: absolute;
+  top: 80vh;
+  left: calc(50vw - 50px); }
+
+#cta-top .cta {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: rgba(229, 127, 23, 0.5);
+  z-index: 10; }
+  #cta-top .cta:hover {
+    color: #e57f17; }
 
 #whatIKnow, #whatIDid, #contact {
   padding-top: 100px; }
@@ -228,7 +239,12 @@ h3 {
     font-size: 42px;
     width: 50px;
     height: 50px;
-    left: calc(50vw - 25px); }
+    margin-left: 25px; }
+
+  #cta-top .cta {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; }
 
   .contact {
     height: 1000px;
@@ -252,7 +268,12 @@ h3 {
     font-size: 62px;
     width: 70px;
     height: 70px;
-    left: calc(50vw - 35px); }
+    margin-left: 25px; }
+
+  #cta-top .cta {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; }
 
   .contact {
     height: 1100px; } }

@@ -1,6 +1,6 @@
 $(function(){
 	// === Smooth Scroll ===
-	$('body a').on('click', function(event){
+	$('body a').on('click', function(event) {
 		if (this.hash !== "") {
 			event.preventDefault();
 			var hash = this.hash;
@@ -15,7 +15,7 @@ $(function(){
 
 	// === Animate on Scroll ===
 	var $animated_bar = $('.progress-bar-container');
-	var $animated_thumbnail = $('.thumbnail')
+	var $animated_thumbnail = $('.thumbnail');
 	var animation_bar = 'slideInLeft animated';
 	var animation_thumbnail = 'fadeInUp animated';
 	var $window = $(window);
@@ -26,7 +26,6 @@ $(function(){
 		var window_height = $window.height();
 		var window_top_position = $window.scrollTop();
 		var window_bottom_position = (window_top_position + window_height);
-		var $addAnimationClass = 
 
 		$.each($animated_bar, function() {
 			var $element = $(this);
@@ -38,9 +37,6 @@ $(function(){
 				(element_top_position <= window_bottom_position)) {
 				$element.addClass(animation_bar);
 			} 
-			// else {
-			// 	$element.removeClass(animation);
-			// }
 		});
 
 		$.each($animated_thumbnail, function() {
@@ -53,12 +49,25 @@ $(function(){
 				(element_top_position <= window_bottom_position)) {
 				$element.addClass(animation_thumbnail);
 			} 
-			// else {
-			// 	$element.removeClass(animation_thumbnail);
-			// }
 		});
+
+		$(function() {
+			var $ctaTop = $('#cta-top');			
+			if (window_bottom_position > window_height) {
+				$ctaTop.fadeIn();
+			}
+			else {
+				$ctaTop.fadeOut();
+			}
+		});
+		
+
 	}
 
+	
+
+		
+	
 	// === fixed large screen thumbnail ===
 	$(window).resize(function() {
 		var $winWidth = $(window).width();
