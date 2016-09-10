@@ -27,6 +27,7 @@ $(function(){
 		var window_top_position = $window.scrollTop();
 		var window_bottom_position = (window_top_position + window_height);
 
+		// === Progress Bar Animation ===
 		$.each($animated_bar, function() {
 			var $element = $(this);
 			var element_height = $element.outerHeight();
@@ -39,6 +40,7 @@ $(function(){
 			} 
 		});
 
+		// === Projects Thumbnail Animation ===
 		$.each($animated_thumbnail, function() {
 			var $element = $(this);
 			var element_height = $element.outerHeight();
@@ -51,32 +53,16 @@ $(function(){
 			} 
 		});
 
+		// === CTA button ===
 		$(function() {
 			var $ctaTop = $('#cta-top');			
 			if (window_bottom_position > window_height) {
-				$ctaTop.fadeIn();
+				$ctaTop.fadeIn(3000);
 			}
 			else {
 				$ctaTop.fadeOut();
 			}
 		});
-		
+	}		
 
-	}
-
-	
-
-		
-	
-	// === fixed large screen thumbnail ===
-	$(window).resize(function() {
-		var $winWidth = $(window).width();
-		if ($winWidth >= 1200) {
-			$('.lg').addClass('row');
-			$('.md').removeClass();
-		} else {
-			$('.md').addClass('row');
-			$('.lg').removeClass();
-		}
-	})
 });
