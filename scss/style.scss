@@ -192,7 +192,7 @@ h3 {
 	text-align: center;
 	.github, .codepen {
 		display: inline-block;
-		margin: 50px 20px;
+		margin: -50px 20px 50px;
 		&:hover {
 			.fa {
 				color: $black-clr;
@@ -219,6 +219,7 @@ h3 {
 .title-description {
 	border-top: 1px solid $main-clr;
 	border-bottom: 1px solid $main-clr;
+	margin-bottom: 100px;
 	padding: 20px 100px;
 	text-align: center;
 	font-size: 20px;

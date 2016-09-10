@@ -144,7 +144,7 @@ h3 {
   text-align: center; }
   .links .github, .links .codepen {
     display: inline-block;
-    margin: 50px 20px; }
+    margin: -50px 20px 50px; }
     .links .github:hover .fa, .links .codepen:hover .fa {
       color: #000; }
   .links .fa {
@@ -164,6 +164,7 @@ h3 {
 .title-description {
   border-top: 1px solid #E57F17;
   border-bottom: 1px solid #E57F17;
+  margin-bottom: 100px;
   padding: 20px 100px;
   text-align: center;
   font-size: 20px;
